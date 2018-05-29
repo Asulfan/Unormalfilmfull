@@ -8,10 +8,6 @@
     max-width: 97vw;
 }
 
-.videoframe {
-    width: 25vw;
-}
-
 @media (min-width: 768px) {
     .row-5-gutter{
         margin-left: -5px;
@@ -58,10 +54,6 @@
     padding-bottom: 95px;
 } 
 
-#main-page {
-    font-family: 'Poppins', sans-serif;
-}
-
 .semi-title-text {
     padding: 3px 0px 0px 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -85,4 +77,23 @@ a {
 
 .mark-text {
     text-decoration: line-through;
+}
+
+.white-box {
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.container-white-box {
+    position: fixed;
+    left: 16vw;
+    top: 24px;
+    z-index: 1;
+}
+.fixed-nav-1 {
+    padding-left: 27px;
+}
+.fixed-nav-2 {
+    padding-left: 6.5vw;
 }
