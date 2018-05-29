@@ -9,30 +9,71 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Author">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Audun Øhra">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Unormal Film</title>
 </head>
 
 <body>
-    <div id="main-container">
-        <h1 id="main-page">u<mark>norm</mark>al</h1>
-        <h1 id="sub-page">vår visjon</h1>
-        <!-- 1080/8=135, 135*6=810, 810*(16/9)=1440 -->
-        <div id="video-0" class="video-wrapper">
-             <iframe class="big-frame" src="https://www.youtube.com/embed/nwaYjIBaZXQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        <!-- 1080/8=135, 135*2=270, 270*(16/9)=480 -->
-        <div id="video-1" class="video-wrapper">
-            <iframe class="frame" src="https://www.youtube.com/embed/5syhYWrpBR0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        <div id="video-2" class="video-wrapper">
-            <iframe class="frame" src="https://www.youtube.com/embed/5w7PfmeiCyw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        <div id="video-3" class="video-wrapper">
-            <iframe class="frame" src="https://www.youtube.com/embed/de-fCzjXPOE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="container">
+        <div class="row padding-50-top padding-60-bottom">
+            <div class="col-md-2">
+                <a href="https://www.aodesign.no">u<span class="mark-text">norm</span>al</a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.aodesign.no/visjon">visjon</a>
+            </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row padding-95-bottom">
+            <div class="col-md padding-10-bottom padding-12-vwleftright">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nwaYjIBaZXQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row padding-12-vwleftright">
+            <div class="col-sm-12 col-md-6 col-5-left-gutter">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5syhYWrpBR0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <h5 class="semi-title-text">Tittel</h5>
+                <p class="body-text">Enkel Tekst. Her kan det stå noe interessant om noe. Eller ingenting.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-5-right-gutter">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5w7PfmeiCyw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <h5 class="semi-title-text">Tittel</h5>
+                <p class="body-text">Enkel Tekst. Her kan det stå noe interessant om noe. Eller ingenting.</p>
+            </div>
+        </div>
+        <div class="row padding-12-vwleftright">
+            <div class="col-md-6 col-5-left-gutter">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="frame" src="https://www.youtube.com/embed/de-fCzjXPOE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>></iframe>
+                </div>
+                <h5 class="semi-title-text">Tittel</h5>
+                <p class="body-text">Enkel Tekst. Her kan det stå noe interessant om noe. Eller ingenting.</p>
+            </div>
+            <div class="col-md-6 col-5-right-gutter">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="frame" src="https://www.youtube.com/embed/de-fCzjXPOE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>></iframe>
+                    </div>
+                    <h5 class="semi-title-text">Tittel</h5>
+                    <p class="body-text">Enkel Tekst. Her kan det stå noe interessant om noe. Eller ingenting.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 
 </html>
