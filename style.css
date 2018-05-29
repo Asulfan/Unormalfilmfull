@@ -1,0 +1,117 @@
+/******************************************
+*  Author : Author   
+*  Created On : Mon May 28 2018
+*  File : style.css
+*******************************************/
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 577px) {
+    #main-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas: 
+            "nav1 nav2"
+            "video0 video0"
+            "video1 video1"
+            "video2 video2"
+            "video3 video3";
+    }
+    .big-frame {
+        width: 480px;
+        max-width: 100vw;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (minwidth: 576px) {
+    
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #main-container{
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas: 
+            ". nav1 nav2 . ."
+            ". video0 video0 video0 ."
+            ". video1 video2 video3 .";
+    }
+
+    .big-frame {
+        width: 768px;
+        height: 432px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #main-container{
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas: 
+            ". nav1 nav2 . ."
+            ". video0 video0 video0 ."
+            ". video1 video2 video3 .";
+    }
+
+    .big-frame {
+        width: 1460px;
+        height: 822px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+
+#main-container {
+    display: grid;
+}
+
+.frame {
+    width: 480px;
+    height: 270px;
+    max-width: 100vw;
+}
+
+#main-page {
+    grid-area: nav1;
+}
+
+#sub-page {
+    grid-area: nav2;
+}
+
+#video-0 {
+    grid-area: video0;
+}
+
+#video-1 {
+    grid-area: video1;
+}
+
+#video-2 {
+    grid-area: video2;
+}
+
+#video-3 {
+    grid-area: video3;
+}
+
+mark {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+mark:hover {
+    text-decoration: line-through;
+}
