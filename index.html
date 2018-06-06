@@ -19,28 +19,47 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="width-300px">
-            <p class="margin-10-bottom">
-                <a href="/">u<span class="mark-text">norm</span>al</a><br/>
+    <div class="dad-container">
+        <div id="contact-info" class="width-300px">
+            <p class="margin-0">
+                <a class="cursor-notallowed" href="/">u<span class="mark-text">norm</span>al</a><br/>
                 <a href="/visjon">visjon</a><br/>
-                <a href="/visjon">arbeider</a><br/>
-                <br>
-                <br>
+                <a href="javascript:" onclick="workMenu()">arbeider</a><br/>
+                <br/>
+                <br/>
                 kontakt@unormalfilm.no<br/>
                 90 60 16 27<br/>
                 <br/>
-                Ormen langegate 125<br/>
+                Ormen Langes vei 12<br/>
                 Lade 7041<br/>
                 Trondheim, Norge
             </p>
-            <svg height="16" width="34">
-                <polygon points="0,6 26,6 26,0 34,8 26,16 26,10 0,10" style="fill:#212529" onclick="getRandLayout()" />
+            <svg height="36" width="5000">
+                <polygon class="pointer" points="0,0 0,36 50,36 50,0" style="fill: #fff" onclick="getRandomLayout()" />
+                <polygon class="pointer" points="0,16 26,16 26,10 34,18 26,26 26,20 0,20" style="fill:#212529" onclick="getRandomLayout()">
+                    <!--<animate id="part1" begin="mouseover" end="mouseout" fill="freeze" attributeName="points" dur="30000ms" to="0,16 2026,16 2026,10 2034,18 2026,26 2026,20 0,20" />
+                    <animate begin="part1.end" fill="freeze" attributeName="points" dur="200ms" to="0,16 26,16 26,10 34,18 26,26 26,20 0,20" />-->
+                </polygon>
             </svg>
         </div>
-        <div id="imagecontainer" class="image-grid">
-            
+        <div id="image-container" class="desktop-image-grid">
         </div>
+    </div>
+    <div id="work-list" class="white-box position-a">
+        <p class="margin-25t-30">
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(0)">supero</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(1)">geired</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(2)">loen</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(0)">superhero</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(1)">getspired</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(2)">lon</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(0)">suphero</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(1)">ge inspired</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(2)">losn</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(0)">suo</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(1)">getpired</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(2)">loen</a><br/>
+        </p>
     </div>
 </body>
 

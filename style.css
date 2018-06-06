@@ -4,12 +4,32 @@
 *  File : style.css
 *******************************************/
 
-
 @media (max-width: 768px) {
+    .image {
+        width: 100vw;
+        height: auto;
+    }
 
 }
 @media (min-width: 768px) {
 
+    .dad-container {
+        margin: 25px 30px;
+        display: grid;
+        grid-template-columns: 300px, 1fr;
+        grid-template-areas:
+            "nav images";
+    }
+
+    .width-300px {
+        min-width:300px;
+    }
+
+    .image {
+        display: flex;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 body {
@@ -35,38 +55,65 @@ a:hover {
     text-decoration: line-through;
 }
 
-.container {
-    margin: 40px;
+.margin-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.width-300px {
-    min-width:300px;
+#contact-info {
+    grid-area: nav;
 }
 
-.margin-10-bottom {
-    margin-bottom: 10px;
+#image-container {
+    grid-area: images;
+    width: calc(97vw - 300px);
+    height: calc(98vh - 80px);
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 10px;
 }
 
-.img0 {
+.white-box {
     position: fixed;
-    left: 30vw;
-    top: 10vh;
-    width: 30vw;
-    height: 30vw;
+    top: 120px;
+    background-color: #fff;
+    opacity: 1;
+    width: 290px;
+    height: 800px;
 }
 
-.img1 {
-    position: fixed;
-    left: 60vw;
-    top: 10vh;
-    width: 20vw;
-    height: 20vw;
+.position-b {
+    left: 0px;
 }
 
-.img2 {
-    position: fixed;
-    left: 40vw;
-    top: 50vh;
-    width: 30vw;
-    height: 30vw;
+.position-a {
+    left: -290px;
+}
+
+.margin-0-25 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.margin-25t-30 {
+    margin-top: 35px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.reverse {
+    color: #909090;
+}
+
+.reverse:hover {
+    color: #212529;
+}
+
+.cursor-notallowed {
+    cursor: not-allowed;
+}
+
+polygon {
+    cursor: pointer;
 }
