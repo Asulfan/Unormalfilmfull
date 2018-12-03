@@ -11,14 +11,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Audun Øhra">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:500" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-    <script src="layout.js"></script>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <script src="script1.js"></script>
+    <script src="layout1.js"></script>
     <title>Unormal Film</title>
 </head>
 
-<body>
+<body class="z-index-0">
+    <div id="screensize"></div>
     <div class="dad-container">
         <div id="contact-info" class="width-300px">
             <p class="margin-0">
@@ -34,7 +38,7 @@
                 Lade 7041<br/>
                 Trondheim, Norge
             </p>
-            <svg height="36" width="5000">
+            <svg height="36" width="300">
                 <polygon class="pointer" points="0,0 0,36 50,36 50,0" style="fill: #fff" onclick="getRandomLayout()" />
                 <polygon class="pointer" points="0,16 26,16 26,10 34,18 26,26 26,20 0,20" style="fill:#212529" onclick="getRandomLayout()">
                     <!--<animate id="part1" begin="mouseover" end="mouseout" fill="freeze" attributeName="points" dur="30000ms" to="0,16 2026,16 2026,10 2034,18 2026,26 2026,20 0,20" />
@@ -47,19 +51,15 @@
     </div>
     <div id="work-list" class="white-box position-a">
         <p class="margin-25t-30">
-            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(0)">supero</a><br/>
-            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(1)">geired</a><br/>
-            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(2)">loen</a><br/>
-            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(0)">superhero</a><br/>
-            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(1)">getspired</a><br/>
-            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(2)">lon</a><br/>
-            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(0)">suphero</a><br/>
-            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(1)">ge inspired</a><br/>
-            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(2)">losn</a><br/>
-            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(0)">suo</a><br/>
-            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(1)">getpired</a><br/>
-            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(2)">loen</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(0)">Get Inspired</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(1)">Super Hero Burger</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(2)">Mesterhus</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(3)">Birk Sport</a><br/>
+            <a class="reverse" href="javascript:" onclick="setLayoutByIndex(4)">Richard Nystad</a><br/>
         </p>
+    </div>
+    <div id="overlay" class="z-index-neg">
+        
     </div>
 </body>
 
